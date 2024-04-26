@@ -1,0 +1,334 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ;
+  }
+  
+  p,
+  h1,
+  h2.h3,
+  h4,
+  h5,
+  h6,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .login-form a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .wlcm-txt {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    color: #202724;
+    margin-bottom: 42px;
+  }
+  
+  
+  
+  .leftForm .form-section {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .form-section:last-child {
+    margin-bottom: 46px;
+  }
+  
+  .leftForm .form-section label {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: left;
+    color: #5f6261;
+    margin-bottom: 6px;
+  }
+  
+  .leftForm .form-section .inputText {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 11px 13px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    outline: none;
+  }
+  
+  .leftForm .form-section .eye-btn {
+    top: 34px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .leftForm .form-section .eye-btn i {
+    color: #5F6261;
+  }
+  
+  .leftForm .form-section .checkDiv {
+    display: flex;
+    margin-top: 8px;
+  }
+  
+  .leftForm .form-section .textLink {
+    color: #218383;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .leftForm .form-section .checkDiv label {
+    color: #202724;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .leftForm .form-section .checkDiv label a {
+    color: #218383;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .leftForm .form-section .checkDiv label a:hover {
+    color: #218383;
+    text-decoration: none;
+  }
+  
+  
+  
+  input[type="checkbox"] {
+    appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    border: none;
+    width: 18px;
+    height: 18px;
+    background: url(../assets/checkbox.png) 0 0 no-repeat;
+    vertical-align: middle;
+    transition: background 0s;
+    margin-right: 5px;
+    outline: 0;
+  }
+  
+  input[type="checkbox"]:checked {
+    background: url(../assets/checkbox.png) -18px 0px no-repeat;
+    outline: 0;
+  }
+  
+  
+  .leftForm .captcha-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .leftForm .login-btn-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leftForm .login-btn-section button {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: center;
+    padding: 11px;
+    border-radius: 8px;
+  }
+  
+  .leftForm .login-btn-section .login-btn {
+    background-color: #218383;
+    border: none;
+    color: #ffffff;
+    border: 1px solid #218383;
+    cursor: pointer;
+  
+  }
+  
+  .leftForm .login-btn-section .otp-login {
+    background-color: #ffffff;
+    border: 1px solid #218383;
+    color: #218383;
+    margin-top: 12px;
+  }
+  
+  .sec-bttn {
+    color: #218383;
+    background-color: rgba(33, 131, 131, 0.16)
+  }
+  
+  .mob-show {
+    display: none !important;
+  }
+  
+  .desk-show {
+    display: block;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+  }
+  
+  header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #218383;
+  }
+  
+  .crm-container {
+    height: calc(100vh - 48px);
+    background-color: #F3F3F3;
+    width: 100%;
+    padding: 24px;
+  }
+  
+  .lg-form {
+    background-color: #fff;
+    padding: 24px 42px;
+    min-width: 500px;
+    box-shadow: 0px 13px 20px 10px rgba(33, 33, 33, 0.04);
+    border-radius: 8px;
+  }
+  
+  
+  .leftForm {
+    max-width: 500px;
+  }
+  
+  .query-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .query-txt span {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .query-txt label {
+    margin: 0px !important;
+    font-size: 14px !important;
+  }
+  
+  .query-txt a {
+    color: green;
+    cursor: pointer;
+  }
+  
+  
+  .showError {
+    color: red;
+    font-size: 11px;
+  }
+  
+  .createAccount span {
+    color: green;
+  }
+  
+  
+  @media(max-width:768px) {
+    .mob-show {
+      display: block !important
+    }
+  
+    .desk-show {
+      display: none
+    }
+  
+    .brdcrmb span {
+      display: none;
+    }
+  
+    .brdcrmb .current {
+      display: block !important;
+    }
+  
+    .brdcrmb {
+      font-size: 12px;
+    }
+  
+    .list-srchbar {
+      width: 150px;
+    }
+  
+    .src-bar button {
+      width: 20px;
+    }
+  
+    .src-bar input {
+      width: 100%;
+    }
+  
+    .custom-pagination {
+      /* flex-direction: column; */
+      background-color: #fff;
+    }
+  
+  
+    .table-data {
+      /* max-height: calc(100% - 88px); */
+    }
+  
+    .bttn-wraper {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 16px;
+    }
+  
+    .bttn-wraper button:first-child {
+      margin-right: 8px;
+    }
+  
+    .lg-form {
+      min-width: 100%;
+    }
+  
+    .left-section {
+      width: 100%;
+    }
+  
+    .right-section {
+      width: 100%;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .paste-section img {
+      width: 150px;
+    }
+  
+    .footer-bttn-section {
+      text-align: center;
+    }
+  }
